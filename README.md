@@ -72,7 +72,7 @@ CoachLens 2.0 transforms any webpage into an **AI-powered interactive classroom*
 
 ### **1. Clone Repository**
 ```bash
-git clone https://github.com/yourusername/coachlens-2.0.git
+git clone https://github.com/Akshat050/coachlens-2.0.git
 cd coachlens-2.0
 ```
 
