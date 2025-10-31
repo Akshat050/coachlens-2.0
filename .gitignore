@@ -1,0 +1,95 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Temporary folders
+tmp/
+temp/
+
+# Debug and test files (keep only essential ones)
+debug-*.html
+test-*.html
+test-*.js
+*-test.html
+*-debug.html
+
+# Documentation drafts and fix files
+*_FIX.md
+*_DEBUG.md
+*_DIAGNOSIS.md
+FIXES_APPLIED.md
+SUCCESS_SUMMARY.md
+EMPTY_RESPONSE_DIAGNOSIS.md
+CRITICAL_FIX.md
+MODAL_BUTTONS_FIX.md
+CSP_FIX.md
+UX_IMPROVEMENTS.md
+QUIZ_COMPLETE_FIX.md
+CHAT_CONTEXT_FINAL_FIX.md
+CONTEXT_COMPLETE_FIX.md
+DEBUG_CONTEXT_GUIDE.md
+KNN_QUIZ_FIX.md
+DYNAMIC_QUIZ_FIX.md
+QUIZ_DEBUG_STEPS.md
+SIMPLE_QUIZ_FIX.md
+DIRECT_QUIZ_FIX.md
+BULLETPROOF_QUIZ_FIX.md
+FINAL_FUNCTIONALITY_FIX.md
+COMPLETE_WORKING_TEST.md
+ADVANCED_QUIZ_SYSTEM.md
+PERFORMANCE_OPTIMIZATION.md
+AI_CONTENT_FIX.md
+
+# Keep only essential documentation
+# README.md - KEEP
+# SETUP.md - KEEP
+# PROJECT_SUMMARY.md - KEEP
+# CHROME_AI_CHALLENGE_READY.md - KEEP
+# AI_SETUP_COMPLETE.md - KEEP
+
+# Extension development files (keep only working versions)
+extension/popup-fixed.js
+extension/popup-simple.html
+
+# Backend test files
+backend/test-*.js
+backend/list-available-models.js
+backend/server-simple.js
