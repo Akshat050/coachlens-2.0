@@ -11,22 +11,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
 # Logs
 logs
 *.log
@@ -39,57 +23,81 @@ pids
 
 # Coverage directory used by tools like istanbul
 coverage/
+*.lcov
 
-# Temporary folders
-tmp/
-temp/
+# nyc test coverage
+.nyc_output
 
-# Debug and test files (keep only essential ones)
-debug-*.html
-test-*.html
-test-*.js
-*-test.html
-*-debug.html
+# Dependency directories
+jspm_packages/
 
-# Documentation drafts and fix files
-*_FIX.md
-*_DEBUG.md
-*_DIAGNOSIS.md
-FIXES_APPLIED.md
-SUCCESS_SUMMARY.md
-EMPTY_RESPONSE_DIAGNOSIS.md
-CRITICAL_FIX.md
-MODAL_BUTTONS_FIX.md
-CSP_FIX.md
-UX_IMPROVEMENTS.md
-QUIZ_COMPLETE_FIX.md
-CHAT_CONTEXT_FINAL_FIX.md
-CONTEXT_COMPLETE_FIX.md
-DEBUG_CONTEXT_GUIDE.md
-KNN_QUIZ_FIX.md
-DYNAMIC_QUIZ_FIX.md
-QUIZ_DEBUG_STEPS.md
-SIMPLE_QUIZ_FIX.md
-DIRECT_QUIZ_FIX.md
-BULLETPROOF_QUIZ_FIX.md
-FINAL_FUNCTIONALITY_FIX.md
-COMPLETE_WORKING_TEST.md
-ADVANCED_QUIZ_SYSTEM.md
-PERFORMANCE_OPTIMIZATION.md
-AI_CONTENT_FIX.md
+# Optional npm cache directory
+.npm
 
-# Keep only essential documentation
-# README.md - KEEP
-# SETUP.md - KEEP
-# PROJECT_SUMMARY.md - KEEP
-# CHROME_AI_CHALLENGE_READY.md - KEEP
-# AI_SETUP_COMPLETE.md - KEEP
+# Optional eslint cache
+.eslintcache
 
-# Extension development files (keep only working versions)
-extension/popup-fixed.js
-extension/popup-simple.html
+# Optional REPL history
+.node_repl_history
 
-# Backend test files
-backend/test-*.js
-backend/list-available-models.js
-backend/server-simple.js
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Chrome extension development
+*.crx
+*.pem
+
+# Backup files
+*.bak
+*.backup

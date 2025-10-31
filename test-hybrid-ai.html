@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoachLens 2.0 - Hybrid AI Test Page</title>
+    <meta name="description" content="Test page for CoachLens 2.0 hybrid AI functionality including Chrome built-in AI and API fallback">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .content-section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .formula {
+            background: #f0f9ff;
+            padding: 10px;
+            border-left: 4px solid #0ea5e9;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .important {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .test-instructions {
+            background: #ecfdf5;
+            border: 1px solid #10b981;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧠 CoachLens 2.0 - Hybrid AI Test</h1>
+        <p>Advanced AI Learning Companion with Chrome Built-in AI + Cloud Fallback</p>
+    </div>
+
+    <div class="test-instructions">
+        <h2>🧪 Testing Instructions</h2>
+        <p><strong>Test all AI features with this comprehensive content:</strong></p>
+        <ol>
+            <li><strong>Summary:</strong> Click "Summarize This Page" to get an AI-generated overview</li>
+            <li><strong>Explanation:</strong> Select any highlighted text below and click "Explain Selection"</li>
+            <li><strong>Quiz:</strong> Generate AI questions based on the content</li>
+            <li><strong>Timeline:</strong> View your learning activity history</li>
+            <li><strong>Chat:</strong> Ask questions about the content in the chat tab</li>
+        </ol>
+        <p><strong>AI Engine:</strong> The extension will use Chrome's built-in AI when available, or fall back to the Gemini API.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>🤖 Machine Learning Fundamentals</h2>
+        <p>Machine Learning (ML) is a subset of <span class="highlight">artificial intelligence</span> that enables computers to learn and make decisions from data without being explicitly programmed for every task.</p>
+        
+        <h3>Core Concepts</h3>
+        <p>The foundation of machine learning rests on several key principles:</p>
+        <ul>
+            <li><strong>Training Data:</strong> The dataset used to teach the algorithm</li>
+            <li><strong>Features:</strong> Individual measurable properties of observed phenomena</li>
+            <li><strong>Labels:</strong> The correct answers for supervised learning</li>
+            <li><strong>Model:</strong> The mathematical representation of a real-world process</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>📊 Types of Machine Learning</h2>
+        
+        <h3>1. Supervised Learning</h3>
+        <p>In supervised learning, algorithms learn from <span class="highlight">labeled training data</span> to make predictions on new, unseen data. Common applications include:</p>
+        <ul>
+            <li>Email spam detection (classification)</li>
+            <li>House price prediction (regression)</li>
+            <li>Image recognition</li>
+        </ul>
+
+        <h3>2. Unsupervised Learning</h3>
+        <p>Unsupervised learning finds hidden patterns in data without labeled examples. Key techniques include:</p>
+        <ul>
+            <li><strong>Clustering:</strong> Grouping similar data points</li>
+            <li><strong>Dimensionality Reduction:</strong> Simplifying data while preserving important information</li>
+            <li><strong>Association Rules:</strong> Finding relationships between variables</li>
+        </ul>
+
+        <h3>3. Reinforcement Learning</h3>
+        <p>This approach learns through <span class="highlight">trial and error</span> by receiving rewards or penalties for actions taken in an environment.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>🧮 Mathematical Foundations</h2>
+        
+        <p>Machine learning relies heavily on mathematical concepts:</p>
+        
+        <div class="formula">
+            <strong>Linear Regression:</strong><br>
+            y = mx + b<br>
+            Where: y = predicted value, m = slope, x = input feature, b = y-intercept
+        </div>
+
+        <div class="formula">
+            <strong>Mean Squared Error (MSE):</strong><br>
+            MSE = (1/n) × Σ(yi - ŷi)²<br>
+            Where: n = number of samples, yi = actual value, ŷi = predicted value
+        </div>
+
+        <p>Key mathematical areas include:</p>
+        <ul>
+            <li><strong>Linear Algebra:</strong> Vectors, matrices, and operations</li>
+            <li><strong>Calculus:</strong> Derivatives for optimization</li>
+            <li><strong>Statistics:</strong> Probability distributions and hypothesis testing</li>
+            <li><strong>Optimization:</strong> Finding minimum/maximum values</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>🛠️ Popular Algorithms</h2>
+        
+        <h3>Decision Trees</h3>
+        <p>Decision trees create a <span class="highlight">tree-like model of decisions</span> and their possible consequences. They're easy to understand and interpret.</p>
+        
+        <h3>Neural Networks</h3>
+        <p>Inspired by biological neural networks, these consist of interconnected nodes (neurons) that process information. Deep learning uses neural networks with many layers.</p>
+        
+        <h3>Support Vector Machines (SVM)</h3>
+        <p>SVMs find the optimal boundary (hyperplane) that separates different classes of data with the maximum margin.</p>
+        
+        <h3>K-Means Clustering</h3>
+        <p>An unsupervised algorithm that partitions data into <code>k</code> clusters based on feature similarity.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>📈 Model Evaluation</h2>
+        
+        <p>Evaluating machine learning models is crucial for understanding their performance:</p>
+        
+        <h3>Classification Metrics</h3>
+        <ul>
+            <li><strong>Accuracy:</strong> Percentage of correct predictions (85% typical for good models)</li>
+            <li><strong>Precision:</strong> True positives / (True positives + False positives)</li>
+            <li><strong>Recall:</strong> True positives / (True positives + False negatives)</li>
+            <li><strong>F1-Score:</strong> Harmonic mean of precision and recall</li>
+        </ul>
+
+        <h3>Regression Metrics</h3>
+        <ul>
+            <li><strong>Mean Absolute Error (MAE):</strong> Average absolute difference</li>
+            <li><strong>Root Mean Square Error (RMSE):</strong> Square root of MSE</li>
+            <li><strong>R-squared:</strong> Proportion of variance explained (0.7-0.9 is good)</li>
+        </ul>
+    </div>
+
+    <div class="important">
+        <h3>⚠️ Important Considerations</h3>
+        <p><strong>Overfitting:</strong> When a model performs well on training data but poorly on new data. This happens when the model is too complex.</p>
+        <p><strong>Underfitting:</strong> When a model is too simple to capture the underlying pattern in the data.</p>
+        <p><strong>Data Quality:</strong> The saying "garbage in, garbage out" is especially true in ML. Clean, relevant data is essential.</p>
+    </div>
+
+    <div class="content-section">
+        <h2>🚀 Real-World Applications</h2>
+        
+        <p>Machine learning powers many technologies we use daily:</p>
+        
+        <h3>Technology & Internet</h3>
+        <ul>
+            <li><strong>Search Engines:</strong> Google uses ML to rank and return relevant results</li>
+            <li><strong>Recommendation Systems:</strong> Netflix suggests movies, Amazon recommends products</li>
+            <li><strong>Social Media:</strong> Facebook's news feed algorithm, Instagram's photo filters</li>
+        </ul>
+
+        <h3>Healthcare</h3>
+        <ul>
+            <li><strong>Medical Imaging:</strong> Detecting tumors in X-rays and MRIs</li>
+            <li><strong>Drug Discovery:</strong> Identifying potential new medications</li>
+            <li><strong>Personalized Treatment:</strong> Tailoring treatments based on patient data</li>
+        </ul>
+
+        <h3>Finance</h3>
+        <ul>
+            <li><strong>Fraud Detection:</strong> Identifying suspicious transactions</li>
+            <li><strong>Algorithmic Trading:</strong> Automated investment decisions</li>
+            <li><strong>Credit Scoring:</strong> Assessing loan default risk</li>
+        </ul>
+
+        <h3>Transportation</h3>
+        <ul>
+            <li><strong>Autonomous Vehicles:</strong> Self-driving cars use computer vision and sensor fusion</li>
+            <li><strong>Route Optimization:</strong> GPS navigation finding fastest routes</li>
+            <li><strong>Predictive Maintenance:</strong> Anticipating vehicle maintenance needs</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>🔮 Future Trends</h2>
+        
+        <p>The field of machine learning continues to evolve rapidly:</p>
+        
+        <h3>Emerging Technologies</h3>
+        <ul>
+            <li><strong>Quantum Machine Learning:</strong> Leveraging quantum computing for ML</li>
+            <li><strong>Federated Learning:</strong> Training models across decentralized data</li>
+            <li><strong>AutoML:</strong> Automated machine learning pipeline creation</li>
+            <li><strong>Explainable AI:</strong> Making AI decisions more interpretable</li>
+        </ul>
+
+        <h3>Ethical Considerations</h3>
+        <p>As ML becomes more prevalent, important ethical questions arise:</p>
+        <ul>
+            <li><span class="highlight">Bias and Fairness:</span> Ensuring algorithms don't discriminate</li>
+            <li><span class="highlight">Privacy:</span> Protecting personal data used in training</li>
+            <li><span class="highlight">Transparency:</span> Understanding how AI makes decisions</li>
+            <li><span class="highlight">Job Impact:</span> Managing automation's effect on employment</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>📚 Getting Started</h2>
+        
+        <p>For those interested in learning machine learning:</p>
+        
+        <h3>Programming Languages</h3>
+        <ul>
+            <li><strong>Python:</strong> Most popular, with libraries like scikit-learn, TensorFlow, PyTorch</li>
+            <li><strong>R:</strong> Excellent for statistics and data analysis</li>
+            <li><strong>JavaScript:</strong> TensorFlow.js for web-based ML</li>
+            <li><strong>Julia:</strong> High-performance scientific computing</li>
+        </ul>
+
+        <h3>Learning Path</h3>
+        <ol>
+            <li>Master basic statistics and linear algebra</li>
+            <li>Learn Python programming and data manipulation</li>
+            <li>Practice with datasets on Kaggle</li>
+            <li>Take online courses (Coursera, edX, Udacity)</li>
+            <li>Work on personal projects</li>
+            <li>Contribute to open-source ML projects</li>
+        </ol>
+
+        <div class="formula">
+            <strong>Success Formula:</strong><br>
+            ML Expertise = (Math Foundation + Programming Skills + Practice) × Time + Curiosity
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2>🎯 Key Takeaways</h2>
+        
+        <p>Machine learning is transforming how we solve complex problems:</p>
+        <ul>
+            <li>It's a powerful tool for finding patterns in large datasets</li>
+            <li>Success requires good data, appropriate algorithms, and careful evaluation</li>
+            <li>Applications span virtually every industry and domain</li>
+            <li>Continuous learning is essential as the field evolves rapidly</li>
+            <li>Ethical considerations are becoming increasingly important</li>
+        </ul>
+        
+        <p><strong>Remember:</strong> Machine learning is not magic—it's a sophisticated set of mathematical and statistical techniques that require understanding, practice, and responsible application.</p>
+    </div>
+
+    <script>
+        // Add some interactivity for testing
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🧪 CoachLens 2.0 Test Page Loaded');
+            console.log('📊 Content sections:', document.querySelectorAll('.content-section').length);
+            console.log('🎯 Highlighted terms:', document.querySelectorAll('.highlight').length);
+            console.log('📐 Formulas:', document.querySelectorAll('.formula').length);
+            
+            // Add click handlers for testing
+            document.querySelectorAll('.highlight').forEach(el => {
+                el.addEventListener('click', function() {
+                    console.log('🖱️ Clicked highlighted term:', this.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
