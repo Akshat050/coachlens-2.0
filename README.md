@@ -97,11 +97,13 @@ Applying fallback behavior when confidence is low
 Avoiding persistent storage of sensitive content
 
 ## Project Structure
+```
 coachlens-2.0/
 ├── extension/        # Chrome extension source
 ├── backend/          # Optional backend service
 ├── test-hybrid-ai.html
 └── README.md
+```
 
 
 ### Future Improvements
